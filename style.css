@@ -1,0 +1,87 @@
+@font-face {
+	font-family: Dosis;
+	src: url(../libs/fonts/Dosis/Dosis-Regular.ttf);
+}
+/*
+#004182
+#118DF0
+#FBFFA3
+#FF4B68
+*/
+textarea::-webkit-input-placeholder { color: #FBFFA3; }
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.header {
+	background: #004182;
+	height: 100px;
+	font-family: Dosis;
+	position: relative;
+}
+	h1 {
+		color: #FBFFA3;
+		font-size: 55px;
+		letter-spacing: 30px;
+		font-weight: 700;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-top: 20px;
+	}
+	.header .add {
+		text-decoration: none;
+		color: #FF4B68;
+		font-size: 40px;
+		left: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+	}
+.notes {
+ 	position: relative;
+	padding: 0px;
+	margin: 0;
+	height: 200px;
+
+	border-top: 1px solid #FF4B68;
+	border-left: 1px solid #FF4B68;;
+}
+	.notes .note {
+
+		font-family: Dosis;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+3,118df0+68 */
+		background: rgb(30,87,153); /* Old browsers */
+		background: -moz-linear-gradient(45deg,  rgba(30,87,153,1) 3%, rgba(17,141,240,1) 68%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg,  rgba(30,87,153,1) 3%,rgba(17,141,240,1) 68%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg,  rgba(30,87,153,1) 3%,rgba(17,141,240,1) 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#118df0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+		color: #FBFFA3;
+		height: 100%;
+		padding: 10px 10px 10px 10px;
+		width: 100%;
+		resize: vertical;
+
+	}
+	.notes .del {
+		position: absolute;
+		right: 25px;
+		top: 5px;
+		font-size: 35px;
+		color: #FF4B68;
+		cursor: pointer;
+		display: none;
+	}
+	.notes:hover .del{
+		display: block;
+	}
+	.dragenterclass {
+		border: 5px dashed #FF4B68;
+	}
+

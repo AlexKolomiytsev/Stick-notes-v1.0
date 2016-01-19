@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stick Notest</title>
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="libs/reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row header">
+			<a href="#" class="add" title="Add a new stick"><i class="fa fa-plus"></i></a>
+			<h1>Sticky Notes</h1> 	
+		</div>
+		<div class="row" id="stNotes">
+			<div class="col-lg-3 notes" draggable="true">
+				<div class="del">
+					<i class="fa fa-minus" title="delete this stick"></i>
+				</div>
+				<textarea class="note" placeholder="Your note"></textarea>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
